@@ -21,6 +21,11 @@ npm run dev
 npm run build
 ```
 
+### Pages and Templates
+
+- configure each page in webpack/webpack.common.js
+- css imported from scripts/index.js
+
 ### Features:
 
 * ES6 Support via [babel-loader](https://github.com/babel/babel-loader)

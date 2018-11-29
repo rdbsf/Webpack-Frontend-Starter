@@ -4,6 +4,7 @@ const Path = require('path');
 const Webpack = require('webpack');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const dest = Path.join(__dirname, '../dist');
 
@@ -32,7 +33,7 @@ module.exports = merge(common, {
       },
       {
         test: /\.(js)$/,
-        include: Path.resolve(__dirname, '../src'),
+        include: Path.resolve(__dirname, '../src/scripts'),
         loader: 'babel-loader'
       },
       {
